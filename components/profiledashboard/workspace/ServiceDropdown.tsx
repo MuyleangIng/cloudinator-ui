@@ -17,17 +17,30 @@ import {
 
 const services = [
     {
-        value: "service-a",
-        label: "Service A",
+        value: "User Service",
+        label: "User Service",
     },
     {
-        value: "service-b",
-        label: "Service B",
+        value: "Product Service",
+        label: "Product Service",
     },
     {
-        value: "service-c",
-        label: "Service C",
+        value: "Order Service",
+        label: "Order Service",
     },
+    {
+        value: "Payment Service",
+        label: "Payment Service",
+    },
+    {
+        value: "Notification Service",
+        label: "Notification Service",
+    },
+    {
+        value: "Review Service",
+        label: "Review Service",
+    },
+
 ];
 
 export function ServiceDropdown() {
@@ -43,7 +56,7 @@ export function ServiceDropdown() {
     };
 
     return (
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 pb-4">
             <div className="rounded-lg border border-purple-300 bg-white text-purple-600 p-4">
                 <p className="text-sm text-muted-foreground">Selected services:</p>
                 <div className="mt-2 flex flex-wrap gap-2">
