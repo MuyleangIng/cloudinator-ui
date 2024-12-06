@@ -5,7 +5,6 @@ import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ArrowLeft } from "lucide-react";
 import { SpringMicroservice } from "@/components/profiledashboard/workspace/service/spring-microservice/SpringMicroservice";
 import Link from "next/link";
-import {ServiceDropdown} from "@/components/profiledashboard/workspace/ServiceDropdown";
 import {
     ServiceCreationFlow
 } from "@/components/profiledashboard/workspace/service/spring-microservice/ServiceCreationFlow";

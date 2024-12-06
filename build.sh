@@ -20,7 +20,7 @@ if [ $? -eq 0 ]; then
   read branch
 
   # Push the changes to the remote repository
-  git push origin $branch
+  git push origin "$branch"
 
   echo "Changes pushed successfully."./buil
 else
