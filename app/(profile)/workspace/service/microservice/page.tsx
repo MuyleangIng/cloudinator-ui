@@ -6,6 +6,9 @@ import { ArrowLeft } from "lucide-react";
 import { SpringMicroservice } from "@/components/profiledashboard/workspace/service/spring-microservice/SpringMicroservice";
 import Link from "next/link";
 import {ServiceDropdown} from "@/components/profiledashboard/workspace/ServiceDropdown";
+import {
+    ServiceCreationFlow
+} from "@/components/profiledashboard/workspace/service/spring-microservice/ServiceCreationFlow";
 
 
 const services = [
@@ -71,8 +74,10 @@ export default function SpringMicroservices() {
                 </Button>
             </div>
 
+
+            {/*<ServiceDropdown />*/}
             {/* Embed the ServiceDropdown here */}
-            <ServiceDropdown />
+            <ServiceCreationFlow />
 
             <Tabs defaultValue="relationships" className="mb-6">
                 <TabsList>
@@ -91,6 +96,7 @@ export default function SpringMicroservices() {
                     </div>
                 ))}
             </div>
+
         </div>
     );
 }

@@ -16,10 +16,13 @@ if [ $? -eq 0 ]; then
   read commit_message
   git commit -m "$commit_message"
 
-  # Push the changes to the remote repository
-  git push origin circleci-project-setup
+  echo "Enter Branch:"
+  read branch
 
-  echo "Changes pushed successfully."
+  # Push the changes to the remote repository
+  git push origin $branch
+
+  echo "Changes pushed successfully."./buil
 else
   echo "Build failed. Aborting Git operations."
   exit 1
