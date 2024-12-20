@@ -1,5 +1,9 @@
 #!/bin/bash
 
+Hello i'm fron git cloudidatior 
+
+
+
 # Run the npm build command
 echo "Running npm run build..."
 npm run build
